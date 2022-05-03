@@ -1,0 +1,32 @@
+@baseDir: '../';
+& when (@media-common = true) {
+.lib-font-face(
+    @family-name:'FontAwesome',
+    @font-path: '@{baseDir}fonts/fontawesome-webfont',
+    @font-weight: normal,
+    @font-style: normal,
+    @font-type: 'truetype',
+    @font-display: swap
+);
+.lib-font-face(
+    @family-name:'PlutoBold',
+    @font-path: '@{baseDir}fonts/PlutoBold/PlutoBold',
+    @font-style: normal,
+    @font-type: 'truetype',
+    @font-display: swap
+);
+.lib-font-face(
+    @family-name:'PlutoMedium',
+    @font-path: '@{baseDir}fonts/PlutoMedium/PlutoMedium',
+    @font-style: normal,
+    @font-type: 'truetype',
+    @font-display: swap
+);
+.lib-font-face(
+    @family-name:'PlutoRegular',
+    @font-path: '@{baseDir}fonts/PlutoRegular/PlutoRegular',
+    @font-style: normal,
+    @font-type: 'truetype',
+    @font-display: swap
+);
+}

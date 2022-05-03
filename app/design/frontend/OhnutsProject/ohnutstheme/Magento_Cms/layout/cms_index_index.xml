@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    </head>
+<body>
+        <referenceContainer name="content.bottom">
+        <!--<container name="footermap" htmlTag="div" htmlId="footmap" htmlClass="footergmap" >
+            <block class="Magento\Cms\Block\Block" name="women-left-menu-block">
+                 <arguments>
+                         <argument name="block_id" xsi:type="string">women-left-menu-block</argument>
+                 </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Template" name="related_producthm" template="Magento_Cms::html/related_producthm.phtml" before="-" />
+         </container>-->
+         
+        <container name="googlemap" htmlTag="div" htmlId="googlemap" htmlClass="googlemap" >
+         <block class="Magento\Framework\View\Element\Template" name="related_producthm" template="Magento_Cms::html/related_producthm.phtml" before="-" />
+        </container>
+        </referenceContainer>
+  
+<!--<referenceBlock name="googlemaporange">
+<container name="customblock" htmlTag="div" htmlId="customblockid" htmlClass="customblockclass" >
+   <block class="Magento\Cms\Block\Block" name="sale-left-menu-block">
+      <arguments>
+        <argument name="block_id" xsi:type="string">sale-left-menu-block</argument>
+        </arguments>
+   </block>
+         </container>
+      </referenceBlock>
+
+
+ <referenceContainer name="footer">
+          
+        <container name="footermap" htmlTag="div" htmlId="footmap" htmlClass="footergmap" />
+         
+           
+        </referenceContainer>
+<referenceContainer name="footer-container">
+      <container name="googlemaporange" before="footer" />
+    </referenceContainer>-->
+
+ </body>
+</page>

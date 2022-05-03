@@ -1,0 +1,83 @@
+<div class="hometesti">
+<h2>Testimonials</h2>
+<div class="crm-testi-slider slider">
+					<div class="crm-testi-innercontext">
+						The purpose of The Illinois MakerLab is the world's first 3D printing Lab in a Business School. Our goal is to be the leading educator in the Desktop 3D printing community. We provide courses and workshops in 3D printing at our campus in Champaign, Illinois and also offer anyone in the world an opportunity to earn a certificate in this new technology through our 3D printing Specialization on Coursera.
+						<div class="crm-testi-author">
+						Aric Rindfleisch <span>Executive Director of the Illinois MakerLab</span>
+						</div>
+					</div>
+					<div class="crm-testi-innercontext">
+						2
+						<div class="crm-testi-author">
+						Aric Rindfleisch <span>Executive Director of the Illinois MakerLab</span>
+						</div>
+					</div>
+					
+					<div class="crm-testi-innercontext">
+						3
+						<div class="crm-testi-author">
+						Aric Rindfleisch <span>Executive Director of the Illinois MakerLab</span>
+						</div>
+					</div>
+					
+					<div class="crm-testi-innercontext">
+						4
+						<div class="crm-testi-author">
+						Aric Rindfleisch <span>Executive Director of the Illinois MakerLab</span>
+						</div>
+					</div>
+					
+					<div class="crm-testi-innercontext">
+						5
+						<div class="crm-testi-author">
+						Aric Rindfleisch <span>Executive Director of the Illinois MakerLab</span>
+						</div>
+					</div>
+					
+					
+				</div>
+				<!--<div class="crm-testi-imgcontnav slider">
+				
+					<div class="testi-imgnav"><img src="<?php echo $this->getViewFileUrl('images/crm-duke-university.jpg'); ?>" ></div>
+					<div class="testi-imgnav"><img src="<?php echo $this->getViewFileUrl('images/crm-illinois-university.jpg'); ?>" ></div>
+					<div class="testi-imgnav"><img src="<?php echo $this->getViewFileUrl('images/crm-wisconsin.jpg'); ?>" ></div>
+					<div class="testi-imgnav"><img src="<?php echo $this->getViewFileUrl('images/crm-illinois-makerlab.jpg'); ?>" ></div>
+					<div class="testi-imgnav"><img src="<?php echo $this->getViewFileUrl('images/crm-durham-pub-school.jpg'); ?>" ></div>
+				
+				</div>-->
+
+</div>
+
+  <script>
+	  require([ "jquery", 'jquery/ui', 'slick'], function($){
+    "use strict";
+   // var jQuery = $.noConflict();
+
+     //jQuery.fn.slick = jQuery.fn.slick || function() {};
+    // jQuery(".videos-slider-2").not('.slick-initialized').slick();
+	  jQuery(document).ready(function(){
+		jQuery(".crm-testi-slider").slick({
+	arrows:true, dots: true, infinite:true, speed:1000,
+  autoplay:true, autoplaySpeed: 3000, slidesToShow:1, slidesToScroll:1 /*,asNavFor: '.crm-testi-imgcontnav'*/
+    });
+   /* jQuery(".crm-testi-imgcontnav .testi-imgnav").click(function(e){
+        e.preventDefault();
+		//var slideIndex = 1;
+        slideIndex = jQuery(this).index();
+        //jQuery( '.crm-testi-slider' ).slickGoTo( parseInt(slideIndex) );
+        jQuery('.crm-testi-slider').slick('slickGoTo',jQuery(this).index());
+    });
+	
+    jQuery('.crm-testi-imgcontnav').slick({
+	  slidesToShow: 5, slidesToScroll: 1, dots: false, arrows: false, infinite: false, focusOnSelect: true	
+	  });*/
+	
+});
+
+jQuery(document).ready( function(){
+//alert(slick);
+
+});
+});
+	  </script>

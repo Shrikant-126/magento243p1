@@ -1,0 +1,437 @@
+& when (@media-common = true) {
+    *{ margin:0;
+        padding:0;
+        box-sizing:border-box;
+        -moz-box-sizing:border-box;
+        -webkit-box-sizing:border-box;
+        -ms-box-sizing:border-box;
+        -o-box-sizing:border-box;}
+    .clear {
+        clear:both;
+    }
+    body {
+        font-size: 15px;
+        font-family: @font-family-plutoRegular;
+        input[type="text"],
+        input[type="password"],
+        input[type="url"],
+        input[type="tel"],
+        input[type="search"],
+        input[type="number"],
+        input[type="datetime"],
+        input[type="email"],
+        select{
+            font-family: @font-family-plutoRegular;
+        }
+      }
+    .page-wrapper{
+        .page-header {
+            background: #272526;
+                .panel {
+                    &.wrapper {
+                        border: 0;
+                        background: #272526;
+                        margin-bottom: -10px;
+                        position: relative;
+                            .panel.header {
+                                display: flex;
+                                flex-wrap: wrap;
+                                align-items: center;
+                                padding: 10px 0 0 0;
+                                    .header.links {
+                                        li {
+                                            a {
+                                                text-decoration: none;
+                                                font-size: 16px;
+                                                font-family: @font-family-plutoRegular;
+                                                    &::after {
+                                                        font-family: @font-family-fontAwesome;
+                                                        color: #fff;
+                                                        content: "\f2c0";
+                                                        margin-left: 10px;
+                                                        font-size: 18px;
+                                                    }
+                                            }
+                                        }
+                                    }
+                                    .minicart-wrapper {
+                                        margin-left: 35px;
+                                            .showcart {
+                                                span.text{
+                                                    position: relative !important;
+                                                    color: #fff;
+                                                    font-size: 16px;
+                                                    font-family: @font-family-plutoRegular;
+                                                }
+                                                &:before {
+                                                    display: none;
+                                                }
+                                                &::after {
+                                                    content: '\e611';
+                                                    font-family: 'luma-icons';
+                                                    color: #fff;
+                                                    font-size: 18px;
+                                                    font-weight: normal;
+                                                    margin-left: 10px;
+                                                }
+                                                .counter.qty {
+                                                    border-radius: 100%;
+                                                    width: 18px;
+                                                    height: 18px;
+                                                    line-height: 20px;
+                                                    font-size: 12px;
+                                                    position: absolute;
+                                                    right: -10px;
+                                                    top: -10px;
+                                                }
+                                            }
+                                    }
+                                    .header.links{
+                                        margin-left: 0;
+                                    }
+                                    .ph-retail-sec {
+                                        margin-left: auto;
+                                            .ph-retail-main {
+                                                display: flex;
+                                                flex-wrap: wrap;
+                                                align-items: center;
+                                                text-decoration: none;
+                                                font-size: 16px;
+                                                font-family: @font-family-plutoRegular;
+                                                color: #fff;
+                                                    a{
+                                                        color:#fff;
+                                                        position: relative;
+                                                        margin: 0 10px;
+                                                        text-decoration: none;
+                                                            &:hover{
+                                                                color: #a9cf38;
+                                                                text-decoration: none;
+                                                            }
+                                                    }
+                                                    a.hdemail {
+                                                        &:after {
+                                                            content: "\f003";
+                                                            font-family: @font-family-fontAwesome;
+                                                            font-size: 18px;
+                                                        }
+                                                    }
+                                                    .tp-retail-stores {
+                                                        position: relative;
+                                                        margin: 0 20px 0 25px;
+                                                            &:after {
+                                                                content: "\f041";
+                                                                font-family: @font-family-fontAwesome;
+                                                                font-size: 20px;
+                                                                margin-left: 10px;
+                                                            }
+                                                    }
+                                            }
+                                    } 
+                            }
+                    }
+                }
+            .header.content {
+                padding: 0 0 15px 0;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                    .logo {
+                        margin: 0;
+                    }
+                    .block-search {
+                        margin-left: auto;
+                        padding-left: 0;
+                        max-width: 715px;
+                        width: 100%;
+                        top: -15px;
+                        .minisearch {
+                            input#search{
+                                height: 42px;
+                                border-radius: 8px;
+                                border: 2px solid #808080;
+                                    &::-webkit-input-placeholder {
+                                        color: #dedede;
+                                        opacity: 1;
+                                    }
+                                    &:-moz-placeholder {
+                                        color: #dedede;
+                                        opacity: 1;
+                                    }
+                                    &::-moz-placeholder {
+                                        color: #dedede;
+                                        opacity: 1;
+                                    }
+                                    &:-ms-input-placeholder {
+                                        color: #dedede;
+                                        opacity: 1;
+                                    }
+                            }
+                        }
+                        .action.search{
+                            opacity: 1;
+                                &:before {
+                                    color: #000;
+                                    font-size: 24px;
+                                    line-height: 40px;
+                                }
+                        }  
+                    }
+                    .hdfree-shiping-rt {
+                        padding-left: 20px;
+                        position: relative;
+                        top: -15px;
+                            .hdfree-shiping {
+                                font-size: 18px;
+                                color: #a9cf38;
+                                font-family: @font-family-plutoRegular;
+                            }
+                    }
+            }
+        }
+
+        .nav-sections {
+            background: transparent;
+            margin-bottom: 8px !important;
+            margin-top: -55px;
+                .navigation {
+                    background: transparent;
+                    text-align: center;
+                    font-family: @font-family-plutoRegular;
+                    font-weight: 400;
+                    li.level-top {
+                        > a {
+                          color: #fff;  
+                          font-family: @font-family-plutoRegular;
+                            font-weight: 400;
+                            font-size: 18px;
+                            padding-left: 0;
+                        }
+                        .submenu {
+                            text-align: left;
+                        }
+                        &.level-top {
+                            margin-right: 40px;
+                            &:after {
+                                content: "";
+                                width: 2px;
+                                height: 18px;
+                                background: #f6891f;
+                                right: -20px;
+                                transform: translate3d(-50%,-50%,0);
+                                top: 50%;
+                                position: absolute;
+                                left: unset !important;
+                            }
+                            &:hover {
+                                &:after{
+                                width: 2px;
+                                height: 18px;
+                                background: #f6891f;
+                                right: -20px;
+                                transform: translate3d(-50%,-50%,0);
+                                top: 50%;
+                                left: unset !important;
+                                }
+                            }
+                            &:last-child {
+                                &:after {
+                                    display: none;
+                                }
+                            }
+                            &:nth-child(2) {
+                                &:after {
+                                    background: #37bebb;
+                                }
+                            }
+                            &:nth-child(3){
+                                &:after {
+                                    background: #973f98;
+                                }
+                            }
+                            &:nth-child(4){
+                                &:after {
+                                    background: #f6891f;
+                                }
+                            }
+                            &:nth-child(5){
+                                &:after {
+                                    background: #88a433;
+                                }
+                            }
+                        }
+                    } 
+                }
+        } 
+    }
+    .cms-home{
+        #maincontent{
+            background: @bg-partical;
+        }
+    }
+    .hm-bannerimg {
+        .pagebuilder-slide-wrapper {
+            background-size: 100% !important;
+                .pagebuilder-overlay {
+                    padding-top: 0;
+                    padding-bottom: 0;
+                }
+        }
+    } 
+    .hm-cat-wrapper-one {
+        display: flex;
+        gap: 2%;
+        .hmgifts-sec {
+            overflow: hidden;
+            padding-bottom: 30%;
+            position: relative;
+            width: 100%;
+            border: 2px solid #8cce03;
+            &:before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+             img {
+                position: absolute;
+                width: 100%;
+                min-width: 100%;
+                height: auto;
+                min-height: 100%;
+                max-width: 59%;
+                object-fit: cover;
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+                -webkit-transition: all .3s ease-in-out;
+                -moz-transition: all .3s ease-in-out;
+                transition: all .3s ease-in-out;
+            }
+        }
+    }
+    .testimonials_homepage {
+        text-align: center;
+        padding: 50px 0;
+        margin: 50px 0;
+        background: transparent !important;
+        background-size: inherit !important;
+        background-repeat: repeat !important;
+        .crm-testi-slider {
+            .slick-list {
+                max-width: 960px;
+                margin: 0 auto;
+            }
+        }
+    }
+    footer{
+        &.page-footer{
+            background: @bg-footerbg-partical;
+            color: #fff;
+            padding: 0;
+            .footer{
+                padding:20px 0;
+                .main-cont-waraper{
+                    .inner-navlink-sec {
+                        display: flex;
+                        gap: 15px;
+                        .footercont {    
+                            width: 20%;
+                            h3 {
+                                color: #37bebb;
+                                font-family: @font-family-plutoMedium;
+                                font-weight: normal;
+                                margin: 0;
+                                line-height: 1.5;
+                                padding: 15px 0;
+                            }
+                            ul{
+                                padding: 0;
+                                line-height: 1.5;
+                                li{
+                                    margin-bottom: 10px;
+                                    position: relative;
+                                    padding-left: 10px;
+                                    &:before{
+                                        content: "\f105";
+                                        font-family: @font-family-fontAwesome;
+                                        left: -9px;
+                                        position: relative;
+                                    }
+                                }
+                            }
+                            .block.newsletter {
+                                display: block;
+                                float: none;
+                                max-width: 100%;
+                                margin: 0;
+                                width: 100%;
+                                position: relative;
+                                padding-bottom: 20px;
+                                .field.newsletter {
+                                    float: none;
+                                    width: 100%;
+                                    max-width: 100%;
+                                    input{
+                                        &#newsletter {
+                                            margin: 0;
+                                            background: #cfcfcf;
+                                            border: 0;
+                                            border-radius: 5px;
+                                            height: 38px;
+                                            padding: 0 10px 0 30px;
+                                            width: 100%;
+                                            display: block;
+                                            color: #000;
+                                            font-size: 14px;
+                                            max-width: 100%;
+                                        }
+                                    }
+                                    #newsletter-error {
+                                        position: absolute;
+                                        bottom: 0;
+                                    }
+                                }
+                                .actions {
+                                    float: none;
+                                    display: block;
+                                    width: 100%;
+                                    max-width: 100%;
+                                    clear: both;
+                                    button.subscribe {
+                                        width: 100%;
+                                        max-width: 100%;
+                                        display: block;
+                                        background: #fff;
+                                        border: 0;
+                                        border-radius: 5px;
+                                        height: 38px;
+                                        color: #000;
+                                        text-transform: uppercase;
+                                        font-size: 14px;
+                                        margin-top: 8px;
+                                        position: relative;
+                                        transition: all 0.5s ;
+                                        &:hover{
+                                            background: #37bebb;
+                                            color: #fff;
+                                            transition: all 0.5s ;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .footer-guarntee {
+                        text-align: center;
+                        padding-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .copyright {
+        background-color: #002734;
+    }
+}
