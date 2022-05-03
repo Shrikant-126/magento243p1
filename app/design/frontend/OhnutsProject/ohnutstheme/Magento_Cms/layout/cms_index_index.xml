@@ -21,7 +21,7 @@
          </container>-->
          
         <container name="googlemap" htmlTag="div" htmlId="googlemap" htmlClass="googlemap" >
-         <block class="Magento\Framework\View\Element\Template" name="related_producthm" template="Magento_Cms::html/related_producthm.phtml" before="-" />
+         <block class="Magento\Framework\View\Element\Template" name="home_googlemap" template="Magento_Cms::html/home_googlemap.phtml" before="-" />
         </container>
         </referenceContainer>
   
