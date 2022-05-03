@@ -1,11 +1,11 @@
 & when (@media-common = true) {
     *{ margin:0;
         padding:0;
-        box-sizing:border-box;
+       /* box-sizing:border-box;
         -moz-box-sizing:border-box;
         -webkit-box-sizing:border-box;
         -ms-box-sizing:border-box;
-        -o-box-sizing:border-box;}
+        -o-box-sizing:border-box;*/}
     .clear {
         clear:both;
     }
@@ -24,6 +24,13 @@
             font-family: @font-family-plutoRegular;
         }
       }
+    .cms-home {
+        .column {
+            &.main {
+                padding-bottom: 0;
+            }
+        }
+    }
     .page-wrapper{
         .page-header {
             background: #272526;
