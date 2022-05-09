@@ -134,7 +134,40 @@
                                                             }
                                                     }
                                             }
-                                    } 
+                                    }
+                                .item{
+                                    &.compare{
+                                        margin-left: 20px;
+                                        .action{
+                                            &.compare{
+                                                position: relative;
+                                                margin-right: 15px;
+                                                &::before{
+                                                    content: '\e61e';
+                                                    position: relative;
+                                                    font-family: luma-icons;
+                                                    color: #fff;
+                                                    font-size: 20px;
+                                                }
+                                                .counter.qty{
+                                                    font-size: 12px;
+                                                    position: absolute;
+                                                    width: 20px;
+                                                    height: 20px;
+                                                    background: #a9cf38;
+                                                    display: block;
+                                                    overflow: hidden;
+                                                    text-align: center;
+                                                    top: -16px;
+                                                    right: -14px;
+                                                    line-height: 22px;
+                                                    border-radius: 100%;
+                                                    color: #000;
+                                                }
+                                            }
+                                        }
+                                    }
+                                } 
                             }
                     }
                 }

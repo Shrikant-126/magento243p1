@@ -6,14 +6,15 @@
 
 /** @var $block Magento\Framework\View\Element\Template */
 ?>
-<li class="item link compare" data-bind="scope: 'compareProducts'" data-role="compare-products-link">
+<div class="item link compare" data-bind="scope: 'compareProducts'" data-role="compare-products-link">
     <a class="action compare no-display" title="<?= $block->escapeHtmlAttr(__('Compare Products')) ?>"
        data-bind="attr: {'href': compareProducts().listUrl}, css: {'no-display': !compareProducts().count}"
     >
-        <?= $block->escapeHtml(__('Compare Products')) ?>
+        <?= $block->escapeHtml(__('')) ?>
+        <!--<img src="<?php //echo $this->getViewFileUrl('images/call1.png'); ?>" alt="Demo"/>-->
         <span class="counter qty" data-bind="text: compareProducts().countCaption"></span>
     </a>
-</li>
+</div>
 <script type="text/x-magento-init">
 {"[data-role=compare-products-link]": {"Magento_Ui/js/core/app": <?= /* @noEscape */ $block->getJsLayout() ?>}}
 </script>

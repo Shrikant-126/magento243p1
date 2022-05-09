@@ -29,6 +29,7 @@
         <move element="hd_ph_retail" destination="header.panel" before="header.links"/>
 		<move element="hd_text" destination="header-wrapper" after="top.search"/>
 		<move element="minicart" destination="header.panel" after="header.links"/>
+        <move element="catalog.compare.link" destination="header.panel" after="minicart"/>
         <referenceBlock name="header" remove="true"/>
          <referenceBlock name="form.subscribe" remove="true" />
        <referenceBlock name="footer_links" remove="true" />
